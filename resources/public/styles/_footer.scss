@@ -1,0 +1,110 @@
+
+@import "./sprite";
+
+.layout-footer {
+  overflow: hidden;
+  background-color: #29353d;
+
+  .company-info {
+    display: flex;
+    align-items: flex-end;
+    margin: 55px auto 60px;
+    color: #e5e5e5;
+  }
+
+  .auth-record {
+    height: 52px;
+    border-top: 1px solid #686e72;
+    line-height: 52px;
+    text-align: center;
+    font-size: 16px;
+    color: #999;
+    opacity: 0.8;
+    background-color: #262b30;
+  }
+
+  .contacts {
+    margin-right: 206px;
+
+    .slogan {
+      @include sprite($slogan);
+      margin-bottom: 50px;
+    }
+    
+    dl {
+      display: flex;
+      align-items: center;
+
+      + dl {
+        margin-top: 10px;
+      }
+
+      dt {
+        width: 5em;
+        white-space: nowrap;
+        text-align: justify;
+      }
+
+      .tel {
+        @include sprite($tel);
+      }
+
+      .fax {
+        @include sprite($fax);
+      }
+
+      .email {
+        @include sprite($email);
+      }
+
+      .location {
+        @include sprite($location);
+      }
+
+      .icon {
+        width: 15px;
+        margin-right: 10px;
+      }
+    }
+  }
+
+  .site-map {
+    margin-right: 100px;
+    margin-top: -6px;
+    text-align: center;
+
+    + .site-map {
+      margin-right: 200px;
+    }
+
+    li {
+      &:nth-child(2) {
+        margin-top: 8px;
+      }
+      
+      + li {
+        margin-top: 19px;
+      }
+    }
+
+    .icon1 {
+      @include sprite($site-map1);
+    }
+
+    .icon2 {
+      @include sprite($site-map2);
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .wechat {
+    text-align: center;
+
+    img {
+      margin-bottom: 12px;
+    }
+  }
+}

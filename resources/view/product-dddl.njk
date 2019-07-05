@@ -1,0 +1,36 @@
+{% extends "./base/frame.njk" %}
+
+{% block head %}
+  <link rel="stylesheet" href="/public/styles/product.css">
+{% endblock %}
+
+{% block main %}
+  <div class="content">
+    <div class="center-box">
+      <h2>单点登录系统</h2>
+      <p class="summary">本系统将实现访问同一服务器不同应用中的受保护资源的同一用户，只需要登录一次，即通过一个应用中的安全验证后，再访问其他应用中的受保护资源时，不再需要重新登录验证。</p>
+      <h3>功能特点</h3>
+      <p class="feature-desc"></p>
+      <ul class="features">
+        <li>
+          <img src="/public/images/product-diagram/dddl-diagram1.png" alt="">
+          <div class="feature">
+            <h4>提供统一的用户、角色、机构管理</h4>
+          </div>
+        </li>
+        <li>
+          <img src="/public/images/product-diagram/dddl-diagram2.png" alt="">
+          <div class="feature">
+            <h4>提供统一的身份认证机制</h4>
+          </div>
+        </li>
+        <li>
+          <img src="/public/images/product-diagram/dddl-diagram3.png" alt="">
+          <div class="feature">
+            <h4>能够快速的集成第三方系统</h4>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+{% endblock %}

@@ -1,0 +1,277 @@
+// SCSS variables are information about icon's compiled state, stored under its original file name
+//
+// .icon-home {
+//   width: $icon-home-width;
+// }
+//
+// The large array-like variables contain all information about a single icon
+// $icon-home: x y offset_x offset_y width height total_width total_height image_path;
+//
+// At the bottom of this section, we provide information about the spritesheet itself
+// $spritesheet: width height image $spritesheet-sprites;
+$about-name: 'about';
+$about-x: 358px;
+$about-y: 52px;
+$about-offset-x: -358px;
+$about-offset-y: -52px;
+$about-width: 35px;
+$about-height: 31px;
+$about-total-width: 494px;
+$about-total-height: 288px;
+$about-image: '../images/sprite.png';
+$about: (358px, 52px, -358px, -52px, 35px, 31px, 494px, 288px, '../images/sprite.png', 'about', );
+$bond-name: 'bond';
+$bond-x: 266px;
+$bond-y: 102px;
+$bond-offset-x: -266px;
+$bond-offset-y: -102px;
+$bond-width: 20px;
+$bond-height: 20px;
+$bond-total-width: 494px;
+$bond-total-height: 288px;
+$bond-image: '../images/sprite.png';
+$bond: (266px, 102px, -266px, -102px, 20px, 20px, 494px, 288px, '../images/sprite.png', 'bond', );
+$contact-name: 'contact';
+$contact-x: 292px;
+$contact-y: 102px;
+$contact-offset-x: -292px;
+$contact-offset-y: -102px;
+$contact-width: 20px;
+$contact-height: 20px;
+$contact-total-width: 494px;
+$contact-total-height: 288px;
+$contact-image: '../images/sprite.png';
+$contact: (292px, 102px, -292px, -102px, 20px, 20px, 494px, 288px, '../images/sprite.png', 'contact', );
+$culture-name: 'culture';
+$culture-x: 399px;
+$culture-y: 52px;
+$culture-offset-x: -399px;
+$culture-offset-y: -52px;
+$culture-width: 30px;
+$culture-height: 31px;
+$culture-total-width: 494px;
+$culture-total-height: 288px;
+$culture-image: '../images/sprite.png';
+$culture: (399px, 52px, -399px, -52px, 30px, 31px, 494px, 288px, '../images/sprite.png', 'culture', );
+$email-name: 'email';
+$email-x: 355px;
+$email-y: 102px;
+$email-offset-x: -355px;
+$email-offset-y: -102px;
+$email-width: 15px;
+$email-height: 13px;
+$email-total-width: 494px;
+$email-total-height: 288px;
+$email-image: '../images/sprite.png';
+$email: (355px, 102px, -355px, -102px, 15px, 13px, 494px, 288px, '../images/sprite.png', 'email', );
+$fax-name: 'fax';
+$fax-x: 376px;
+$fax-y: 102px;
+$fax-offset-x: -376px;
+$fax-offset-y: -102px;
+$fax-width: 14px;
+$fax-height: 13px;
+$fax-total-width: 494px;
+$fax-total-height: 288px;
+$fax-image: '../images/sprite.png';
+$fax: (376px, 102px, -376px, -102px, 14px, 13px, 494px, 288px, '../images/sprite.png', 'fax', );
+$location-name: 'location';
+$location-x: 318px;
+$location-y: 102px;
+$location-offset-x: -318px;
+$location-offset-y: -102px;
+$location-width: 13px;
+$location-height: 18px;
+$location-total-width: 494px;
+$location-total-height: 288px;
+$location-image: '../images/sprite.png';
+$location: (318px, 102px, -318px, -102px, 13px, 18px, 494px, 288px, '../images/sprite.png', 'location', );
+$logo-name: 'logo';
+$logo-x: 266px;
+$logo-y: 0px;
+$logo-offset-x: -266px;
+$logo-offset-y: 0px;
+$logo-width: 228px;
+$logo-height: 46px;
+$logo-total-width: 494px;
+$logo-total-height: 288px;
+$logo-image: '../images/sprite.png';
+$logo: (266px, 0px, -266px, 0px, 228px, 46px, 494px, 288px, '../images/sprite.png', 'logo', );
+$search-name: 'search';
+$search-x: 435px;
+$search-y: 52px;
+$search-offset-x: -435px;
+$search-offset-y: -52px;
+$search-width: 25px;
+$search-height: 25px;
+$search-total-width: 494px;
+$search-total-height: 288px;
+$search-image: '../images/sprite.png';
+$search: (435px, 52px, -435px, -52px, 25px, 25px, 494px, 288px, '../images/sprite.png', 'search', );
+$site-map1-name: 'site-map1';
+$site-map1-x: 266px;
+$site-map1-y: 52px;
+$site-map1-offset-x: -266px;
+$site-map1-offset-y: -52px;
+$site-map1-width: 40px;
+$site-map1-height: 44px;
+$site-map1-total-width: 494px;
+$site-map1-total-height: 288px;
+$site-map1-image: '../images/sprite.png';
+$site-map1: (266px, 52px, -266px, -52px, 40px, 44px, 494px, 288px, '../images/sprite.png', 'site-map1', );
+$site-map2-name: 'site-map2';
+$site-map2-x: 312px;
+$site-map2-y: 52px;
+$site-map2-offset-x: -312px;
+$site-map2-offset-y: -52px;
+$site-map2-width: 40px;
+$site-map2-height: 44px;
+$site-map2-total-width: 494px;
+$site-map2-total-height: 288px;
+$site-map2-image: '../images/sprite.png';
+$site-map2: (312px, 52px, -312px, -52px, 40px, 44px, 494px, 288px, '../images/sprite.png', 'site-map2', );
+$slogan-name: 'slogan';
+$slogan-x: 0px;
+$slogan-y: 266px;
+$slogan-offset-x: 0px;
+$slogan-offset-y: -266px;
+$slogan-width: 309px;
+$slogan-height: 22px;
+$slogan-total-width: 494px;
+$slogan-total-height: 288px;
+$slogan-image: '../images/sprite.png';
+$slogan: (0px, 266px, 0px, -266px, 309px, 22px, 494px, 288px, '../images/sprite.png', 'slogan', );
+$solution1-name: 'solution1';
+$solution1-x: 0px;
+$solution1-y: 133px;
+$solution1-offset-x: 0px;
+$solution1-offset-y: -133px;
+$solution1-width: 127px;
+$solution1-height: 127px;
+$solution1-total-width: 494px;
+$solution1-total-height: 288px;
+$solution1-image: '../images/sprite.png';
+$solution1: (0px, 133px, 0px, -133px, 127px, 127px, 494px, 288px, '../images/sprite.png', 'solution1', );
+$solution2-name: 'solution2';
+$solution2-x: 133px;
+$solution2-y: 133px;
+$solution2-offset-x: -133px;
+$solution2-offset-y: -133px;
+$solution2-width: 126px;
+$solution2-height: 127px;
+$solution2-total-width: 494px;
+$solution2-total-height: 288px;
+$solution2-image: '../images/sprite.png';
+$solution2: (133px, 133px, -133px, -133px, 126px, 127px, 494px, 288px, '../images/sprite.png', 'solution2', );
+$solution3-name: 'solution3';
+$solution3-x: 133px;
+$solution3-y: 0px;
+$solution3-offset-x: -133px;
+$solution3-offset-y: 0px;
+$solution3-width: 127px;
+$solution3-height: 127px;
+$solution3-total-width: 494px;
+$solution3-total-height: 288px;
+$solution3-image: '../images/sprite.png';
+$solution3: (133px, 0px, -133px, 0px, 127px, 127px, 494px, 288px, '../images/sprite.png', 'solution3', );
+$solution4-name: 'solution4';
+$solution4-x: 0px;
+$solution4-y: 0px;
+$solution4-offset-x: 0px;
+$solution4-offset-y: 0px;
+$solution4-width: 127px;
+$solution4-height: 127px;
+$solution4-total-width: 494px;
+$solution4-total-height: 288px;
+$solution4-image: '../images/sprite.png';
+$solution4: (0px, 0px, 0px, 0px, 127px, 127px, 494px, 288px, '../images/sprite.png', 'solution4', );
+$tel-name: 'tel';
+$tel-x: 337px;
+$tel-y: 102px;
+$tel-offset-x: -337px;
+$tel-offset-y: -102px;
+$tel-width: 12px;
+$tel-height: 17px;
+$tel-total-width: 494px;
+$tel-total-height: 288px;
+$tel-image: '../images/sprite.png';
+$tel: (337px, 102px, -337px, -102px, 12px, 17px, 494px, 288px, '../images/sprite.png', 'tel', );
+$triangle-down-name: 'triangle-down';
+$triangle-down-x: 466px;
+$triangle-down-y: 52px;
+$triangle-down-offset-x: -466px;
+$triangle-down-offset-y: -52px;
+$triangle-down-width: 18px;
+$triangle-down-height: 23px;
+$triangle-down-total-width: 494px;
+$triangle-down-total-height: 288px;
+$triangle-down-image: '../images/sprite.png';
+$triangle-down: (466px, 52px, -466px, -52px, 18px, 23px, 494px, 288px, '../images/sprite.png', 'triangle-down', );
+$spritesheet-width: 494px;
+$spritesheet-height: 288px;
+$spritesheet-image: '../images/sprite.png';
+$spritesheet-sprites: ($about, $bond, $contact, $culture, $email, $fax, $location, $logo, $search, $site-map1, $site-map2, $slogan, $solution1, $solution2, $solution3, $solution4, $tel, $triangle-down, );
+$spritesheet: (494px, 288px, '../images/sprite.png', $spritesheet-sprites, );
+
+// The provided mixins are intended to be used with the array-like variables
+//
+// .icon-home {
+//   @include sprite-width($icon-home);
+// }
+//
+// .icon-email {
+//   @include sprite($icon-email);
+// }
+//
+// Example usage in HTML:
+//
+// `display: block` sprite:
+// <div class="icon-home"></div>
+//
+// To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+//
+// // CSS
+// .icon {
+//   display: inline-block;
+// }
+//
+// // HTML
+// <i class="icon icon-home"></i>
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+// The `sprites` mixin generates identical output to the CSS template
+//   but can be overridden inside of SCSS
+//
+// @include sprites($spritesheet-sprites);
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}

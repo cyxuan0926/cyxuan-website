@@ -1,0 +1,59 @@
+{% extends "./base/frame.njk" %}
+
+{% block head %}
+  <link rel="stylesheet" href="/public/styles/product-center-e4505fd1cb.css">
+{% endblock %}
+
+{% block breadcrumb %}{% endblock %}
+
+{% block main %}
+  {# 导航 #}
+  <div class="products-nav">
+    <div class="center-box">
+      <span>产品中心：</span>
+      <ul class="links">
+        <li>
+          <a href="/product/zhzf">智慧执法产品</a>
+        </li>
+        <li class="active">
+          <a href="/product/zhjz">智慧矫正产品</a>
+        </li>
+        <li>
+          <a href="/product/zfhl">政法互联产品</a>
+        </li>
+        <li>
+          <a href="/product/zhzw">智慧政务产品</a>
+        </li>
+        <li>
+          <a href="/product/jcyj">决策预警产品</a>
+        </li>
+        <li>
+          <a href="/product/zhaf">智慧安防产品</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <ul class="product-list">
+    <li>
+      <div class="wrap">
+        <div class="info">
+          <h2>消费系统</h2>
+          <p>消费系统提供了合理化的管理方案，分级管理，减少了资金的中间环节，使资金管理更规范、更透明。</p>
+          <a href="/product/zhjz/xfxt">了解详情</a>
+        </div>
+        <img src="/public/images/product-center/xfxt-357436701f.png" alt="">
+      </div>
+    </li>
+    <li>
+      <div class="wrap">
+        <div class="info">
+          <h2>狱务通</h2>
+          <p>狱务通以移动端手机APP的形式，实现了服刑人员家属与监狱的零距离互动。</p>
+          <a href="/product/zhjz/ywt">了解详情</a>
+        </div>
+        <img src="/public/images/product-center/ywt-adbe0450f8.png" alt="">
+      </div>
+    </li>
+  </ul>
+{% endblock %}

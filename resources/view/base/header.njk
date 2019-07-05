@@ -1,0 +1,45 @@
+{% set links = [
+  {
+    path: "/",
+    label: "主页"
+  }, {
+    path: "/solutions",
+    label: "解决方案"
+  }, {
+    path: "/product",
+    label: "产品中心"
+  }, {
+    path: "/culture",
+    label: "企业文化"
+  }, {
+    path: "/about",
+    label: "关于我们"
+  }, {
+    path: "/contacts",
+    label: "联系我们"
+  }
+] %}
+
+<div class="layout-header">
+  <div class="center-box normal-flex">
+    <h1>
+      <a href="/">国科股份</a>
+    </h1>
+    <ul class="nav normal-flex">
+      {% for link in links %}
+        <li>
+          <a
+            href="{{ link.path }}"
+            class="{{ 'active' if helper.isSubRoute(link.path, path) else '' }}"
+          >
+            {{ link.label }}
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+    <div class="search-box">
+      <input type="text" name="keyword" placeholder="请输入检索关键词">
+      <i class="icon"></i>
+    </div>
+  </div>
+</div>

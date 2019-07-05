@@ -1,0 +1,212 @@
+{% extends "./base/frame.njk" %}
+
+{% block head %}
+  <link rel="stylesheet" href="/public/styles/index-2a484dc1a1.css">
+  <link href="https://cdn.bootcss.com/Swiper/4.5.0/css/swiper.min.css" rel="stylesheet">
+{% endblock %}
+
+{% block scripts %}
+  <script src="https://cdn.bootcss.com/Swiper/4.5.0/js/swiper.min.js"></script>
+  <script src="/public/scripts/index-dcae6b46e2.js"></script>
+{% endblock %}
+
+{% block top %}
+  <div class="company-profile">
+    <div class="center-box normal-flex">
+      <h2>国科政信科技（北京）股份有限公司</h2>
+      <div class="info">
+        <i class="icon bond"></i>
+        <dl>
+          <dt>证券简称：</dt>
+          <dd>国科股份</dd>
+        </dl>
+        <b>|</b>
+        <dl>
+          <dt>证券代码：</dt>
+          <dd>834465</dd>
+        </dl>
+        <i class="icon contact"></i>
+        <dl>
+          <dt>联系方式：</dt>
+          <dd>010-82911260</dd>
+        </dl>
+        <b>|</b>
+        <dl>
+          <dt>服务邮箱：</dt>
+          <dd>Service@sinog2c.com</dd>
+        </dl>
+      </div>
+    </div>
+  </div>
+{% endblock %}
+
+{% block breadcrumb %}{% endblock %}
+
+{% block main %}
+  {# 轮播图 #}
+  <div class="block swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="/public/images/index/banner1-01e39c6c9d.png" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="/public/images/index/banner2-a07f7937f7.png" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="/public/images/index/banner3-489aa93348.png" alt="">
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+  {# 解决方案 #}
+  <div class="block solutions">
+    <div class="header">
+      <h3>解决方案</h3>
+      <h4>TOTAL SOLUTION</h4>
+      <i class="icon"></i>
+    </div>
+    <ul>
+      <li>
+        <a href="/solutions/zhjy">
+          <i class="icon"></i>
+          <h3>智慧监狱精细化管理大数据平台</h3>
+        </a>
+      </li>
+      <li>
+        <a href="/solutions/jyzw">
+          <i class="icon"></i>
+          <h3>教育专网系统</h3>
+        </a>
+      </li>
+      <li>
+        <a href="/solutions/ywgk">
+          <i class="icon"></i>
+          <h3>狱务公开系统</h3>
+        </a>
+      </li>
+      <li>
+        <a href="/solutions/ycsphj">
+          <i class="icon"></i>
+          <h3>远程视频会见与帮教系统</h3>
+        </a>
+      </li>
+    </ul>
+    <i class="triangle"></i>
+  </div>
+
+  {# 产品中心 #}
+  <div class="block products">
+    <div class="header">
+      <h3>产品中心</h3>
+      <h4>PRODUCT CENTER</h4>
+      <i class="icon"></i>
+    </div>
+    <ul class="product-list">
+      <li>
+        <a href="/product/zhzf">
+          <img src="/public/images/index/product-zhzf-1d27561726.png" alt="">
+          <div class="intro">
+            <h3>智慧执法产品</h3>
+            <p>狱务管理系统、刑罚执行管理系统、生活卫生系统</p>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a href="/product/zhjz">
+          <img src="/public/images/index/product-zhjz-018886fc86.png" alt="">
+          <div class="intro">
+            <h3>智慧矫正产品</h3>
+            <p>教育改造管理系统、劳动改造管理系统、教育专网平台</p>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a href="/product/zfhl">
+          <img src="/public/images/index/product-zfhl-1832369d7e.png" alt="">
+          <div class="intro">
+            <h3>政法互联产品</h3>
+            <p>公检法司监武警互联平台、协同矫正平台</p>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a href="/product/zhzw">
+          <img src="/public/images/index/product-zhzw-c150550cd2.png" alt="">
+          <div class="intro">
+            <h3>智慧政务产品</h3>
+            <p>OA、移动办公、内网网站、消息协作平台、警察职工管理系统、监狱建设与保障系统、狱务公开平台</p>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a href="/product/jcyj">
+          <img src="/public/images/index/product-jcyj-b8ea16d267.png" alt="">
+          <div class="intro">
+            <h3>决策预警产品</h3>
+            <p>精细化管理大数据平台、决策支持系统、司法舆情监测系统</p>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a href="/product/zhaf">
+          <img src="/public/images/index/product-zhaf-ac59a4cb0f.png" alt="">
+          <div class="intro">
+            <h3>智慧安防产品</h3>
+            <p>信息安防集成联动系统、智慧中心、物联网行为轨迹跟踪系统、语音识别式全面狱侦防范系统、远程雷达测试心跳甄别系统、智能AB门等</p>
+          </div>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="block articles">
+    <div class="column center-box">
+      <div class="title">
+        <h3>
+          <i class="icon culture"></i>企业文化
+        </h3>
+        <a href="/culture">
+          更多<b>></b>
+        </a>
+      </div>
+      <div class="content">
+        <a href=""><img src="/public/images/index/zhounianqin-7c8179ecda.jpg" alt=""></a>
+        <div class="hot-article">
+          <h4>
+            <a href="">致全体员工的一封信</a>
+          </h4>
+          <p>国科全体员工：<br/>大家好！ 今天是国科十三周年的日子，我代表个人向全体员工表示感谢，感谢你们长期以来对国科的忠诚和奉献...<a href="">more</a>
+          </p>
+        </div>
+        <ul class="article-list">
+          <li>
+            <b></b>
+            <h4>
+              <a href="">致全体员工的一封信</a>
+            </h4>
+            <span>2019-05-15</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="column center-box">
+      <div class="title">
+        <h3>
+          <i class="icon about"></i>关于我们
+        </h3>
+        <a href="/about">
+          更多<b>></b>
+        </a>
+      </div>
+      <div class="content">
+        <a href="/about">
+          <img src="/public/images/index/bangonglou-6c1281485b.jpg" alt="">
+        </a>
+        <p class="intro">
+          国科政信科技（北京）股份有限公司（简称：国科股份），注册资金3900万，成立于2006年5月，总部位于北京，是一家集IT产品自主研发、IT技术服务、应用软件开发、系统集成为一体的综合性高新技术企业，主要从事与监狱相关的软件研发。国科股份拥有将近100项自主知识产权，获得高新技术企业、软件企业、ISO9001质量管理体系认定证书、信息系统集成及服务资质证书、软件涉密资质、军用信息安全产品、军队网络采购资格等认证，同时公司还被评为AAA级重合同守信用企业。。
+        </p>
+      </div>
+    </div>
+  </div>
+{% endblock %}

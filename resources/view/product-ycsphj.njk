@@ -1,0 +1,84 @@
+{% extends "./base/frame.njk" %}
+
+{% block head %}
+  <link rel="stylesheet" href="/public/styles/product.css">
+{% endblock %}
+
+{% block breadcrumb %}{% endblock %}
+
+{% block main %}
+  {# 导航 #}
+  <div class="products-nav">
+    <div class="center-box">
+      <span>解决方案：</span>
+      <ul class="links">
+        <li>
+          <a href="/solutions/zhjy">智慧监狱精细化大管理平台</a>
+        </li>
+        <li>
+          <a href="/solutions/jyzw">教育专网系统</a>
+        </li>
+        <li>
+          <a href="/solutions/ywgk">狱务公开系统</a>
+        </li>
+        <li class="active">
+          <a href="/solutions/ycsphj">远程视频会见与帮教系统</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="content">
+    <div class="center-box">
+      <h2>远程视频会见与帮教系统</h2>
+      <p class="summary">该系统是利用网络技术、多媒体音视频技术、云技术打造的一套无穷扩展的视讯平台，让家属与服刑人员通过视频的方式进行面对面会见，节省了路途与时间成本。平台涵盖了会见审核，会见预约，音视频通话,会见音视频存储,会见大数据分析等功能,采用先进的网络多媒体视音频传输技术，具备良好的兼容性和拓展。</p>
+      <h3>功能特点</h3>
+      <p class="feature-desc"></p>
+      <ul class="features">
+        <li>
+          <img src="/public/images/product-diagram/sjfx.png" alt="">
+          <div class="feature">
+            <h4>数据分析</h4>
+            <p>(1)视频分析</p>
+            <p>国科系统对录制的视频进行大数据分析，对高频率话语、词语和行为进行分析，为家属和犯人行为作出精准预测，为家属和犯人权限更改提供依据。</p>
+            <p>(2)预测分析</p>
+            <p>为管理者提供数据分析预测；为管理者决策提供科学依据；全面提升政府职能政府形象；促进司法公开提升政府政绩。</p>
+          </div>
+        </li>
+        <li>
+          <img src="/public/images/product-diagram/ycsphj1.png" alt="">
+          <div class="feature">
+            <h4>远程视频会见流程</h4>
+            <p>(1)预约管理</p>
+            <p>用于对司法所提交上来的家属会见请求进行审核。</p>
+            <p>(2)预约助手</p>
+            <p>用于司法所工作人员为家属预约远程会见，查看预约结果。</p>
+          </div>
+        </li>
+        <li>
+          <img src="/public/images/product-diagram/ycbj.png" alt="">
+          <div class="feature">
+            <h4>远程帮教</h4>
+            <p>远程帮教活动已经成为维护社会稳定的重要渠道之一。帮教的形式主要有：社会人士对服刑人员进行帮教；服刑人员对社会大众进行帮教；悔改服刑人员向其他服刑人员进行帮教。</p>
+          </div>
+        </li>
+        <li>
+          <img src="/public/images/product-diagram/xlfd.png" alt="">
+          <div class="feature">
+            <h4>心理辅导</h4>
+            <p>心理咨询师可以通过远程会见系统在异地与服刑人员进行“面对面”的心理辅导，帮助服刑人员培养健康心理。</p>
+          </div>
+        </li>
+        <li>
+          <img src="/public/images/product-diagram/jypx.png" alt="">
+          <div class="feature">
+            <h4>就业培训</h4>
+            <p>通过远程会见系统开展就业培训，为服刑人员讲解社会就业现状、应聘技巧、创业政策等，并为他们提供丰富的就业机会，帮助服刑人员出狱后能够快速融入社会，立足社会，找到自食其力的工作。</p>
+          </div>
+        </li>
+      </ul>
+      <h3>远程视频会见流程</h3>
+      <img class="hjlc" src="/public/images/product-diagram/ychjlc.png" alt="">
+    </div>
+  </div>
+{% endblock %}

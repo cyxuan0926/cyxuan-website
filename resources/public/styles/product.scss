@@ -1,0 +1,118 @@
+@import "./_var";
+
+.products-nav {
+  background-color: #f5f5f5;
+  font-size: 16px;
+
+  .center-box {
+    display: flex;
+    align-items: center;
+    height: 80px;
+  }
+
+  .links {
+    display: flex;
+    align-items: center;
+
+    li {
+      a {
+        display: block;
+        height: 36px;
+        padding: 0 12px;
+        border: 1px solid transparent;
+        line-height: 36px;
+
+        &:hover {
+          color: $main-color-weak;
+        }
+      }
+    }
+
+    .active {
+      a {
+        border: 1px solid $main-color-weak;
+        border-radius: 6px;
+        color: $main-color-weak;
+      }
+    }
+  }
+}
+
+.content {
+  padding: 50px 0 94px;
+  line-height: 1.6;
+  font-size: 16px;
+  color: $text-color-weak;
+  background-color: #fff;
+
+  h2,
+  h3 {
+    margin-bottom: 28px;
+    text-align: center;
+    font-size: 26px;
+  }
+
+  .summary {
+    margin-bottom: 52px;
+  }
+}
+
+.features {
+  display: flex;
+  flex-direction: column;
+  margin-top: 90px;
+  margin-bottom: 126px;
+
+  li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1098px;
+
+    +li {
+      margin-top: 130px;
+    }
+
+    &:nth-child(2n) {
+      flex-direction: row-reverse;
+    }
+
+    &:nth-child(2n + 1) {
+      align-self: flex-end;
+    }
+
+    h4 {
+      margin-bottom: 12px;
+      font-size: 24px;
+      color: $text-color-default;
+    }
+
+    p {
+      max-width: 586px;
+    }
+  }
+
+}
+
+.hjlc {
+  width: 100%;
+  margin-top: 42px;
+}
+
+.diagrams {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 130px;
+
+  img {
+    + img {
+      margin-left: 140px;
+    }
+  }
+}
+
+.cgal-diagram {
+  margin-top: 60px;
+  margin-bottom: 66px;
+  text-align: center;
+}

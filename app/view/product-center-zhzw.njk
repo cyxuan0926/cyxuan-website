@@ -1,0 +1,49 @@
+{% extends "./base/frame.njk" %}
+
+{% block head %}
+  <link rel="stylesheet" href="/public/styles/product-center-e4505fd1cb.css">
+{% endblock %}
+
+{% block breadcrumb %}{% endblock %}
+
+{% block main %}
+  {# 导航 #}
+  <div class="products-nav">
+    <div class="center-box">
+      <span>产品中心：</span>
+      <ul class="links">
+        <li>
+          <a href="/product/zhzf">智慧执法产品</a>
+        </li>
+        <li>
+          <a href="/product/zhjz">智慧矫正产品</a>
+        </li>
+        <li>
+          <a href="/product/zfhl">政法互联产品</a>
+        </li>
+        <li class="active">
+          <a href="/product/zhzw">智慧政务产品</a>
+        </li>
+        <li>
+          <a href="/product/jcyj">决策预警产品</a>
+        </li>
+        <li>
+          <a href="/product/zhaf">智慧安防产品</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <ul class="product-list">
+    <li>
+      <div class="wrap">
+        <div class="info">
+          <h2>单点登录系统</h2>
+          <p>本系统将实现访问同一服务器不同应用中的受保护资源的同一用户，只需要登录一次，即通过一个应用中的安全验证后，再访问其他应用中的受保护资源时，不再需要重新登录验证。</p>
+          <a href="/product/zhzw/dddl">了解详情</a>
+        </div>
+        <img src="/public/images/product-center/dddl-be4f30e103.png" alt="">
+      </div>
+    </li>
+  </ul>
+{% endblock %}

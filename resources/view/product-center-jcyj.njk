@@ -1,0 +1,49 @@
+{% extends "./base/frame.njk" %}
+
+{% block head %}
+  <link rel="stylesheet" href="/public/styles/product-center.css">
+{% endblock %}
+
+{% block breadcrumb %}{% endblock %}
+
+{% block main %}
+  {# 导航 #}
+  <div class="products-nav">
+    <div class="center-box">
+      <span>产品中心：</span>
+      <ul class="links">
+        <li>
+          <a href="/product/zhzf">智慧执法产品</a>
+        </li>
+        <li>
+          <a href="/product/zhjz">智慧矫正产品</a>
+        </li>
+        <li>
+          <a href="/product/zfhl">政法互联产品</a>
+        </li>
+        <li>
+          <a href="/product/zhzw">智慧政务产品</a>
+        </li>
+        <li class="active">
+          <a href="/product/jcyj">决策预警产品</a>
+        </li>
+        <li>
+          <a href="/product/zhaf">智慧安防产品</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <ul class="product-list">
+    <li>
+      <div class="wrap">
+        <div class="info">
+          <h2>行为轨迹跟踪系统</h2>
+          <p>该系统运用RFID智能识别定位技术可以实现服刑人员在休息区固定范围活动，区域点名，服刑人员自动记录，特殊罪犯区分，劳动工具识别等功能。</p>
+          <a href="/product/jcyj/xwgjgz">了解详情</a>
+        </div>
+        <img src="/public/images/product-center/xwgjgz.png" alt="">
+      </div>
+    </li>
+  </ul>
+{% endblock %}

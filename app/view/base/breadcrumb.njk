@@ -1,0 +1,12 @@
+<div class="breadcrumb">
+  <div class="links center-box">
+    {% for route in breadcrumb %}
+      {% if loop.last %}
+        <a href="javascript:void(0)">{{ route.title }}</a>
+      {% else %}
+        <a href="{{ route.path }}">{{ route.title }}</a>
+        <span>></span>
+      {% endif %}
+    {% endfor %}
+  </div>
+</div>

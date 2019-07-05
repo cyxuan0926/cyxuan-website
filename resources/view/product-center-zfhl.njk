@@ -1,0 +1,49 @@
+{% extends "./base/frame.njk" %}
+
+{% block head %}
+  <link rel="stylesheet" href="/public/styles/product-center.css">
+{% endblock %}
+
+{% block breadcrumb %}{% endblock %}
+
+{% block main %}
+  {# 导航 #}
+  <div class="products-nav">
+    <div class="center-box">
+      <span>产品中心：</span>
+      <ul class="links">
+        <li>
+          <a href="/product/zhzf">智慧执法产品</a>
+        </li>
+        <li>
+          <a href="/product/zhjz">智慧矫正产品</a>
+        </li>
+        <li class="active">
+          <a href="/product/zfhl">政法互联产品</a>
+        </li>
+        <li>
+          <a href="/product/zhzw">智慧政务产品</a>
+        </li>
+        <li>
+          <a href="/product/jcyj">决策预警产品</a>
+        </li>
+        <li>
+          <a href="/product/zhaf">智慧安防产品</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <ul class="product-list">
+    <li>
+      <div class="wrap">
+        <div class="info">
+          <h2>减刑假释智慧办案平台</h2>
+          <p>该平台采用自动资格筛查、流程控制严格、全程留痕、同步监督、风险防控功能，实现全程无纸化办公。</p>
+          <a href="/product/zfhl/zhba">了解详情</a>
+        </div>
+        <img src="/public/images/product-center/zhba.png" alt="">
+      </div>
+    </li>
+  </ul>
+{% endblock %}

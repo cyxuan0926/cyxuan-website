@@ -1,0 +1,122 @@
+{% extends "./base/frame.njk" %}
+
+{% block head %}
+  <link rel="stylesheet" href="/public/styles/culture.css">
+  <link href="https://cdn.bootcss.com/Swiper/4.5.0/css/swiper.min.css" rel="stylesheet">
+{% endblock %}
+
+{% block scripts %}
+  <script src="https://cdn.bootcss.com/Swiper/4.5.0/js/swiper.min.js"></script>
+  <script src="/public/scripts/culture.js"></script>
+{% endblock %}
+
+{% block main %}
+  <div class="main center-box">
+    <div class="focus">
+      {# 轮播图 #}
+      <div class="news swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <a href="">
+              <img src="/public/images/culture/news1.png" alt="">
+              <h3 class="title">致全体员工的一封信</h3>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="">
+              <img src="/public/images/culture/news2.png" alt="">
+              <h3 class="title">国科股份新三板挂牌敲钟仪式隆重举行</h3>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="">
+              <img src="/public/images/culture/news3.png" alt="">
+              <h3 class="title">【聚焦】国科股份（股票代码：834465）新三板隆重挂牌</h3>
+            </a>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+
+      <div class="articles-overview">
+        <div class="hot">
+          <h3>致全体员工的一封信</h3>
+          <div class="content">
+            <p>国科全体员工：</p>
+            <p>大家好！</p>
+            <p>今天是国科十三周年的日子，我代表个......</p>
+          </div>
+        </div>
+        <ul class="article-list">
+          <li>
+            <a href="">
+              <span></span>
+              <h3>国科股份新三板挂牌敲钟仪式隆重举行</h3>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <span></span>
+              <h3>【聚焦】国科股份（股票代码：834465）新三板隆重挂牌</h3>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <span></span>
+              <h3>推动企业文化建设打造软实力</h3>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <span></span>
+              <h3>中央政法委出台指导意见严格规范减刑假释</h3>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <ul class="articles">
+      <li>
+        <h3>
+          <a href="">国科股份新三板挂牌敲钟仪式隆重举行</a>
+        </h3>
+        <p>2015年12月4日14：40分，国科政信科技（北京）股份有限公司（证券简称：国科股份；证券代码：834465）在全国中小企业股份转让系统隆重敲响上市宝钟......
+        </p>
+        <p class="date">2016-02-24</p>
+      </li>
+      <li>
+        <h3>
+          <a href="">【聚焦】国科股份（股票代码：834465）新三板隆 重挂牌</a>
+        </h3>
+        <p>11月23日，国科政信科技（北京）股份有限公司（下称“国科股份”，股票代码：834465）正式在新三板挂牌。 国科政信科技（北京）股份有限公司创立于2006年5月......</p>
+        <p class="date">2016-02-24</p>
+      </li>
+      <li>
+        <h3>
+          <a href="">推动企业文化建设打造软实力</a>
+        </h3>
+        <p>中国企业文化促进会“践行社会主义核心价值观、助力转型升级研讨会暨中国企业文化促进会2014年工作年会”在郑州举行。 会议就深入学习贯彻党的十八届四中全会重......
+        </p>
+        <p class="date">2014-11-21</p>
+      </li>
+      <li>
+        <h3>
+          <a href="">中央政法委出台指导意见严格规范减刑假释</a>
+        </h3>
+        <p>按照指导意见，即使职务犯罪、金融类犯罪以及涉黑犯罪等三类罪犯具备所有条件，无期徒刑罪犯予以最高额度的减刑（实践中一般不可能这样），其最短刑......</p>
+        <p class="date">2014-02-25</p>
+      </li>
+    </ul>
+    <div class="pagination">
+      <span>共10页</span>
+      <a href="">首页</a>
+      <a href="" class="prev">上一页</a>
+      <a href="">1</a>
+      <a href="" class="active">2</a>
+      <a href="">3</a>
+      <a href="">4</a>
+      <a href="" class="next">下一页</a>
+      <a href="">尾页</a>
+    </div>
+  </div>
+{% endblock %}

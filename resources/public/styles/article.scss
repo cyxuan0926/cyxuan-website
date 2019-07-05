@@ -1,0 +1,81 @@
+@import "../styles/var";
+@import "../styles/mixins";
+
+.main {
+  padding-top: 78px;
+}
+
+h2 {
+  margin-bottom: 50px;
+  text-align: center;
+  font-size: 30px;
+}
+
+.article-info {
+  display: flex;
+  align-items: center;
+  height: 42px;
+  margin-top: 30px;
+  border-bottom: 1px solid #ccc;
+  font-size: 18px;
+  color: #999;
+
+  dl {
+    display: flex;
+    margin-right: 30px;
+  }
+
+  .operate {
+    flex: 1;
+    text-align: right;
+
+    span {
+      margin: 0 5px;
+      cursor: pointer;
+
+      &:first-child {
+        cursor: default;
+        margin-left: 8px;
+      }
+
+      &:last-child {
+        margin-right: 8px;
+      }
+
+      &.active {
+        font-weight: bold;
+        color: $text-color-default;
+      }
+    }
+  }
+}
+
+.article-content {
+  padding: 50px 0 60px;
+}
+
+.article-nav {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 26px;
+  margin-bottom: 130px;
+  border-top: 1px solid #ccc;
+  font-size: 18px;
+
+  .nav-item {
+    max-width: 250px;
+    @include text-ellipsis;
+
+    a {
+      &:hover {
+        color: $main-color-weak;
+
+      }
+
+      &.disabled {
+        cursor: default;
+        color: $text-color-default;
+      }
+    }
+  }
+}

@@ -1,0 +1,59 @@
+{% extends "./base/frame.njk" %}
+
+{% block head %}
+  <link rel="stylesheet" href="/public/styles/product-center-e4505fd1cb.css">
+{% endblock %}
+
+{% block breadcrumb %}{% endblock %}
+
+{% block main %}
+  {# 导航 #}
+  <div class="products-nav">
+    <div class="center-box">
+      <span>产品中心：</span>
+      <ul class="links">
+        <li class="active">
+          <a href="/product/zhzf">智慧执法产品</a>
+        </li>
+        <li>
+          <a href="/product/zhjz">智慧矫正产品</a>
+        </li>
+        <li>
+          <a href="/product/zfhl">政法互联产品</a>
+        </li>
+        <li>
+          <a href="/product/zhzw">智慧政务产品</a>
+        </li>
+        <li>
+          <a href="/product/jcyj">决策预警产品</a>
+        </li>
+        <li>
+          <a href="/product/zhaf">智慧安防产品</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <ul class="product-list">
+    <li>
+      <div class="wrap">
+        <div class="info">
+          <h2>个别谈话系统</h2>
+          <p>运用机器学习前沿技术最大限度的适应地方方言习惯高效记录发言内容</p>
+          <a href="/product/zhzf/gbth">了解详情</a>
+        </div>
+        <img src="/public/images/product-center/gbthxt-04fd1c2c18.png" alt="">
+      </div>
+    </li>
+    <li>
+      <div class="wrap">
+        <div class="info">
+          <h2>智能语音翻译系统</h2>
+          <p>实现了语音识别，维汉互译、语音播报、分角色自动排版，录音录像文件及排版文件同步保存等功能</p>
+          <a href="/product/zhzf/znyyfy">了解详情</a>
+        </div>
+        <img src="/public/images/product-center/znyyfy-8970cc5de3.png" alt="">
+      </div>
+    </li>
+  </ul>
+{% endblock %}

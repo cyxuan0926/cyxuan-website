@@ -1,0 +1,93 @@
+{% extends "./base/frame.njk" %}
+
+{% block head %}
+  <link rel="stylesheet" href="/public/styles/product.css">
+{% endblock %}
+
+{% block breadcrumb %}{% endblock %}
+
+{% block main %}
+  {# 导航 #}
+  <div class="products-nav">
+    <div class="center-box">
+      <span>解决方案：</span>
+      <ul class="links">
+        <li>
+          <a href="/solutions/zhjy">智慧监狱精细化大管理平台</a>
+        </li>
+        <li>
+          <a href="/solutions/jyzw">教育专网系统</a>
+        </li>
+        <li class="active">
+          <a href="/solutions/ywgk">狱务公开系统</a>
+        </li>
+        <li>
+          <a href="/solutions/ycsphj">远程视频会见与帮教系统</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="content">
+    <div class="center-box">
+      <h2>狱务公开系统</h2>
+      <p class="summary">该系统由《服刑人员自助服务平台》、《家属自助服务平台》、《狱务通APP》组成，其中《狱务通APP》基于移动互联网研发，包括监狱介绍、狱务公开、家属服务（远程汇款、远程视频会见、实地会见预约、远程购物、全民普法、心理咨询、查询服刑人员信息、查询服刑人员零花钱情况、查询服刑人员服刑表现及减刑假释情况等），通过扩大监狱APP应用场景，全面提供对社会大众服务，实现监狱狱务工作向服刑人员、家属、社会大众公开。</p>
+      <h3>功能特点</h3>
+      <p class="feature-desc"></p>
+      <ul class="features">
+        <li>
+          <img src="/public/images/product-diagram/ywgkglxt.png" alt="">
+          <div class="feature">
+            <h4>狱务公开管理系统</h4>
+            <p>实现对服刑人员和对家属公开信息的统一管理和发布，在公示信息采集和数据交换标准规范的基础上完成现有系统公示内容的自动公示。 实现除服刑人员相关信息外，对监狱相关信息、工作动态、法律法规、监狱规定等的统一管理和发布。</p>
+          </div>
+        </li>
+        <li>
+          <img src="/public/images/product-diagram/fxryzzfw.png" alt="">
+          <div class="feature">
+            <h4>服刑人员自助服务平台</h4>
+            <p>建立服刑人员查询机制，对接服刑人员胸牌卡，展示国家法律法规、监狱规定、工作动态、监狱动态、服刑人员相关公开信息、个人信息等，达到一卡多用，统一认证，信息公开的目的。实现对相关数据公开的及时性便捷性。</p>
+          </div>
+        </li>
+        <li>
+          <img src="/public/images/product-diagram/jszzfw.png" alt="">
+          <div class="feature">
+            <h4>家属自助服务平台</h4>
+            <p>建立家属查询机制，家属身份证实名登记后可直接在平台上进行查询国家法律法规、监狱相关信息、监狱工作规定、工作动态、服刑人员狱内相关信息等。给服刑人员家属提供一个数据查询的窗口，让家属更好的了解监狱以及服刑人员在监狱内的服刑表现。</p>
+          </div>
+        </li>
+        <li>
+          <img src="/public/images/product-diagram/ycsphj.png" alt="">
+          <div class="feature">
+            <h4>远程视频会见系统</h4>
+            <p>家属通过会见功能可申请远程会见，实现与服刑人员的视频通话。家属申请远程探监后需要等待后台管理人员审核通过后，由监狱端APP主动发起会话，审核结果会以手机短信或APP系统消息发送。全区监狱建设远程会见窗口，实现全区家属可随地预约，随地会见。</p>
+            <p>实现人脸识别活体检测功能，并保证视频端到端延时小于200ms、视频系统能够抗800ms的网络抖动，保障跨网、跨地域稳定传输和码率动态调整，保障网络下稳定运行。</p>
+          </div>
+        </li>
+        <li>
+          <img src="/public/images/product-diagram/ywt.png" alt="">
+          <div class="feature">
+            <h4>狱务通</h4>
+            <p>以移动端手机APP的形式，面向社会公众公开狱务公开、监狱动态、监狱公示、法律法规，家属除了查看以上信息，还提供了查看服刑人员相关信息、投诉建议等功能，实现服刑人员家属与监狱的零距离互动。</p>
+          </div>
+        </li>
+        <li>
+          <img src="/public/images/product-diagram/jspj.png" alt="">
+          <div class="feature">
+            <h4>家属评价系统</h4>
+            <p>能够收集来自服刑人员家属对监狱工作的评价意见，提供给家属对服务评价的窗口等。实现对相关评价信息的统计和分析，来促进监狱工作的反思和改进。能够公布一些常见问题的处理方式，促进监狱的工作效率。</p>
+          </div>
+        </li>
+        <li>
+          <img src="/public/images/product-diagram/znhdpt.png" alt="">
+          <div class="feature">
+            <h4>智能互动平台</h4>
+            <p>能够发布一些积极向上的心理文章公共读物，让服刑人员打卡学习。能够收集来自服刑人员的动态，把握服刑人员的心理动态，及时掌握服刑人员申诉，实现对有异议服刑人员能够及时在线处理和反馈。异议的及时处理和反馈能让罪犯更为安心、稳定地在监狱中服刑。</p>
+          </div>
+        </li>
+      </ul>
+      <h3>成功案例</h3>
+      <p>该项目为陕西省西安监狱、华山监狱、宝鸡监狱、榆林监狱、渭南监狱、女子监狱等全省22所监狱安装部署。狱务公开平台软件项目包括：家属自助服务软件系统、服刑人员自助服务软件系统、狱务公开后台管理系统，并结合狱务通App和微官网实现数据共享，满足监狱对内和对外公开狱务信息的需求。</p>
+    </div>
+  </div>
+{% endblock %}

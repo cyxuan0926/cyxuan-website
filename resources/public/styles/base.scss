@@ -1,0 +1,63 @@
+@import "./reset";
+@import "./var";
+@import "./header";
+@import "./footer";
+
+body {
+  font: $font-size-default PingFangSC-Regular, HelveticaNeue-Light, 'Helvetica Neue Light', 'Microsoft YaHei', sans-serif;
+  color: $text-color-default;
+  background: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased
+}
+
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.center-box {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.normal-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.icon {
+  display: inline-block;
+}
+
+.breadcrumb {
+  color: #999;
+  background-color: #f5f5f5;
+
+  .links {
+    display: flex;
+    align-items: center;
+    height: 46px;
+
+    a {
+      &:hover {
+        color: $main-color;
+
+        &:last-child {
+          color: #999;
+          cursor: default;
+        }
+      }
+    }
+
+    span {
+      margin: 0 8px 0 10px;
+    }
+  }
+}

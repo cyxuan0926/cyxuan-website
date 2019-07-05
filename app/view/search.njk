@@ -1,0 +1,33 @@
+{% extends "./base/frame.njk" %}
+
+{% block head %}
+  <link rel="stylesheet" href="/public/styles/search-c264add3ee.css">
+{% endblock %}
+
+{% block scripts %}{% endblock %}
+
+{% block breadcrumb %}{% endblock %}
+
+{% block main %}
+  <div class="main center-box">
+    <h2>搜索结果</h2>
+    <div class="search-box">
+      <input type="text" name="keyword" placeholder="请输入检索关键词">
+      <i class="icon"></i>
+    </div>
+    {# <ul class="result">
+      <li>
+        <h3>教育专网系统</h3>
+        <p>国科教育专网系统》是一套以科技手段实现服刑人员教育改造的信息化软件，从服刑、改造、社会适应等多个层次向服刑人员提供专业丰富的科学、教育、法律及文化知……</p>
+      </li>
+      <li>
+        <h3>教育专网系统</h3>
+        <p>国科教育专网系统》是一套以科技手段实现服刑人员教育改造的信息化软件，从服刑、改造、社会适应等多个层次向服刑人员提供专业丰富的科学、教育、法律及文化知……</p>
+      </li>
+    </ul> #}
+    <div class="no-result">
+      <img src="/public/images/nodata/search-915a8e8714.png" alt="">
+      <h3>抱歉！无搜索结果，换个词试试吧～</h3>
+    </div>
+  </div>
+{% endblock %}

@@ -1,0 +1,46 @@
+{% extends "./base/frame.njk" %}
+
+{% block head %}
+  <link rel="stylesheet" href="/public/styles/product.css">
+{% endblock %}
+
+{% block main %}
+  <div class="content">
+    <div class="center-box">
+      <h2>个别谈话识别平台</h2>
+      <p class="summary">《国科个别谈话识别平台》以智能语音识别为核心，运用机器学习前沿技术最大限度的适应地方方言习惯高效记录发言内容，并能根据上下文智能修正个人错误语法。该会议语音识别系统解决传统打字效率低、手误、语音转录难等痛点，可以实时、高效的转写语音和语音播报文本内容，同时还具备音频离线转写、会议存档、个人词库和语音输入法等丰富的功能。</p>
+      <h3>功能特点</h3>
+      <p class="feature-desc"></p>
+      <ul class="features">
+        <li>
+          <img src="/public/images/product-diagram/yyzl.png" alt="">
+          <div class="feature">
+            <h4>语音转录</h4>
+            <p>①号区域用于显示发言人的名字与身份，也可添加多个发言人</p>
+            <p>②号区域用于显示发言人语音识别后的文字内容，并且可以选择是否自动将发言人语音识别后的文字推送至③号区域（即会议记录显示区域）</p>
+            <p>④号区域用于选择会议语音识别的功能键，即开始、暂停、结束等功能按键</p>
+            <p>⑤号区域用于显示语音识别后的文字内容，并可对其进行修改</p>
+          </div>
+        </li>
+        <li>
+          <img src="/public/images/product-diagram/hyjl.png" alt="">
+          <div class="feature">
+            <h4>会议记录</h4>
+            <p>①号区域用于选择以往会议记录的条件（如：时间、分类等），方便用户快速筛选</p>
+            <p>②号区域用于显示搜索过后响应的会议文档</p>
+            <p>③号区域用于显示②号区域选择后的会议文档信息，并可对会议附件及记录文档进行上传/修改。</p>
+          </div>
+        </li>
+        <li>
+          <img src="/public/images/product-diagram/tbzx.png" alt="">
+          <div class="feature">
+            <h4>同步中心</h4>
+            <p>同步中心用于将以往的会议记录上传至服务器或同步至本地。</p>
+          </div>
+        </li>
+      </ul>
+      {# <h3>成功案例</h3>
+      <p>陕西省监狱系统部署运行。《国科教育专网系统》作为智慧监狱建设的一部分，在陕西省40周年法制建设成就展和华山监狱智慧监狱评审工作上，成功演示。其中分级处遇积分制兑换视频和VR得到高度评价和广泛关注。</p> #}
+    </div>
+  </div>
+{% endblock %}
