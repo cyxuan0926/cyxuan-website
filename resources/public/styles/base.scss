@@ -4,6 +4,8 @@
 @import "./footer";
 
 body {
+  overflow-x: auto;
+  min-width: $content-min-width;
   font: $font-size-default PingFangSC-Regular, HelveticaNeue-Light, 'Helvetica Neue Light', 'Microsoft YaHei', sans-serif;
   color: $text-color-default;
   background: #fff;

@@ -1,26 +1,25 @@
 .company-intro {
-  padding-top: 70px;
+  padding-top: 50px;
   color: #666;
 
   h2 {
-    margin-bottom: 20px;
+    margin-bottom: 26px;
     text-align: center;
-    font-size: 32px;
+    font-size: 22px;
   }
 
   p {
-    line-height: 1.6;
-    font-size: 16px;
+    line-height: 1.8;
   }
 }
 
 .history {
   position: relative;
-  margin-top: 86px;
+  margin-top: 60px;
 
   img {
     max-width: 100%;
-    
+
     &:last-child {
       position: absolute;
       top: 50px;

@@ -1,16 +1,12 @@
 @import "./_var";
 @import "./_sprite";
 
-body {
-  background-color: #ebeff5;
-}
-
 .block {
   .header {
     text-align: center;
 
     h3 {
-      font-size: 28px;
+      font-size: 26px;
     }
 
     h4 {
@@ -88,13 +84,16 @@ body {
 }
 
 .swiper-container {
-  height: 460px;
   background-color: #fff;
 
   .swiper-slide {
-    display: flex;
-    align-items: center;
-    overflow: hidden;
+    // display: flex;
+    // align-items: center;
+    // overflow: hidden;
+
+    img {
+      width: 100%;
+    }
   }
 
   .swiper-pagination {
@@ -242,7 +241,7 @@ body {
         background-color: $main-color-weak;
 
         h3 {
-          font-size: 22px;
+          font-size: 20px;
         }
 
         p {
@@ -270,17 +269,17 @@ body {
     justify-content: space-between;
     align-items: center;
     box-sizing: border-box;
-    height: 60px;
+    height: 56px;
     margin-bottom: 38px;
-    line-height: 60px;
+    line-height: 56px;
     border-bottom: 2px solid $main-color;
 
     h3 {
       position: relative;
-      width: 192px;
+      width: 176px;
       height: 100%;
       text-indent: 44px;
-      font-size: 28px;
+      font-size: 24px;
       color: #fff;
       background-color: $main-color-weak;
 
@@ -302,7 +301,7 @@ body {
 
     a {
       padding-top: 5px;
-      font-size: 22px;
+      font-size: 18px;
       color: $main-color;
 
       b {

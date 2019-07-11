@@ -16,8 +16,8 @@
     "ci": "npm run lint && npm run cov",
     "autod": "autod",
     "commit": "npx git-cz",
-    "dev:assets": "cd resources/build && npm run dev",
-    "build:assets": "cd resources/build && npm run build"
+    "build-assets:dev": "cd resources/build && npm run dev",
+    "build-assets:prod": "cd resources/build && npm run build"
   },
   "config": {
     "commitizen": {
