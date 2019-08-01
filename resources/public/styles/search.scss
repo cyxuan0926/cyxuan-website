@@ -15,7 +15,6 @@
   .search-box {
     position: relative;
     margin-top: 24px;
-    margin-bottom: 20px;
 
     input {
       box-sizing: border-box;
@@ -44,13 +43,13 @@
     }
     
     h3 {
-      font-size: 28px;
+      font-size: 22px;
       color: $main-color-weak;
     }
 
     p {
       padding-top: 20px;
-      font-size: 18px;
+      font-size: 16px;
       color: $text-color-weak;
     }
   }
@@ -64,5 +63,9 @@
       margin-top: 140px;
       font-size: 30px;
     }
+  }
+
+  .pagination {
+    margin-top: 70px;
   }
 }

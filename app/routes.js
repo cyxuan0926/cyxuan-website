@@ -7,7 +7,7 @@ const solutions = [
   },
   {
     path: '/solutions/zhjy',
-    meta: { title: '智慧监狱精细化管理大数据平台' },
+    meta: { title: '综合执法平台' },
   },
   {
     path: '/solutions/jyzw',
@@ -76,10 +76,10 @@ const product = [
     path: '/product/jcyj/xwgjgz',
     meta: { title: '行为轨迹跟踪系统' },
   },
-  {
-    path: '/product/zhaf',
-    meta: { title: '智慧安防产品' },
-  },
+  // {
+  //   path: '/product/zhaf',
+  //   meta: { title: '智慧安防产品' },
+  // },
 ];
 
 const culture = [
@@ -88,7 +88,7 @@ const culture = [
     meta: { title: '企业文化' },
   },
   {
-    path: '/culture/:id',
+    path: '/culture/:article_id',
     meta: { title: '企业文化详情页' },
   },
 ];

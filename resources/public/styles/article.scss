@@ -3,12 +3,31 @@
 
 .main {
   padding-top: 78px;
-}
 
-h2 {
-  margin-bottom: 50px;
-  text-align: center;
-  font-size: 30px;
+  .title {
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 24px;
+  }
+  
+  img {
+    max-width: 100%;
+  }
+  
+  .ql-container.ql-snow {
+    height: auto;
+    border: none;
+    font: 14px PingFangSC-Regular, HelveticaNeue-Light, "Helvetica Neue Light",
+      "Microsoft YaHei", sans-serif;
+
+    p {
+      line-height: 1.8;
+    }
+  }
+
+  .source {
+    text-align: right;
+  }
 }
 
 .article-info {
@@ -17,7 +36,7 @@ h2 {
   height: 42px;
   margin-top: 30px;
   border-bottom: 1px solid #ccc;
-  font-size: 18px;
+  font-size: 14px;
   color: #999;
 
   dl {
@@ -50,17 +69,13 @@ h2 {
   }
 }
 
-.article-content {
-  padding: 50px 0 60px;
-}
-
 .article-nav {
   display: flex;
   justify-content: space-between;
   padding-top: 26px;
   margin-bottom: 130px;
   border-top: 1px solid #ccc;
-  font-size: 18px;
+  font-size: 16px;
 
   .nav-item {
     max-width: 250px;

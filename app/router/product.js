@@ -11,7 +11,7 @@ module.exports = app => {
   const zfhl = router.namespace('/product/zfhl');
   const zhzw = router.namespace('/product/zhzw');
   const jcyj = router.namespace('/product/jcyj');
-  const zhaf = router.namespace('/product/zhaf');
+  // const zhaf = router.namespace('/product/zhaf');
 
   // 产品中心
   product.redirect('/', '/product/zhzf', 302);
@@ -39,5 +39,5 @@ module.exports = app => {
   jcyj.get('/xwgjgz', controller.product.xwgjgz); // 行为轨迹跟踪系统
 
   // 智慧安防产品
-  zhaf.get('/', controller.product.zhaf);
+  // zhaf.get('/', controller.product.zhaf);
 };

@@ -4,7 +4,9 @@
 $(function() {
   new Swiper('.swiper-container', {
     loop: true,
-    autoplay: true,
+    autoplay: {
+      disableOnInteraction: false,
+    },
     effect: 'fade',
     speed: 1000,
     pagination: {

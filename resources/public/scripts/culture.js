@@ -4,11 +4,14 @@
 $(function() {
   new Swiper('.swiper-container', {
     loop: true,
-    autoplay: true,
+    autoplay: {
+      disableOnInteraction: false,
+    },
     speed: 500,
     pagination: {
       el: '.swiper-pagination',
       clickable: true,
+      disableOnInteraction: false,
     },
   });
 });

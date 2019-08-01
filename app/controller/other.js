@@ -10,12 +10,28 @@ class OtherController extends Controller {
 
   // 联系我们
   async contacts() {
-    await this.ctx.render('contacts.njk');
+    const { ctx, service } = this;
+    const contacts = await service.contacts.findAll();
+
+    await ctx.render('contacts.njk', { contacts });
   }
 
   // 搜索结果页
   async search() {
-    await this.ctx.render('search.njk');
+    const { ctx, service } = this;
+    const { page_num = 1, page_size = 5 } = ctx.query;
+    const result = await service.articles.findBy({
+      page_num: parseInt(page_num),
+      page_size: parseInt(page_size),
+      keyword: ctx.query.keyword,
+    });
+    console.log('search', ctx.query.keyword, result);
+
+    await ctx.render('search.njk', {
+      keyword: ctx.query.keyword,
+      articles: result.data,
+      pagination: result.meta.pagination,
+    });
   }
 }
 

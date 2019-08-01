@@ -2,36 +2,74 @@
 
 {% block head %}
   <link rel="stylesheet" href="/public/styles/article.css">
+  <link href="https://cdn.bootcss.com/quill/1.3.6/quill.snow.min.css" rel="stylesheet">
 {% endblock %}
-
-{% block scripts %}{% endblock %}
 
 {% block main %}
   <div class="main center-box">
-    <h2>致全体员工的一封信</h2>
+    <h2 class="title">{{ article.article_title }}</h2>
     <div class="article-info">
       <dl>
         <dt>发布时间：</dt>
-        <dd>2019.05.15</dd>
+        <dd>{{ helper.formatTime(article.article_publish_time) }}</dd>
       </dl>
       <dl>
         <dt>作者：</dt>
-        <dd>系统管理者</dd>
+        <dd>{{ article.article_author }}</dd>
       </dl>
-      <div class="operate">
+      <div id="fontSizeAlter" class="operate">
         【<span>字号：</span><span class="big">大</span><span class="middle active">中</span><span class="small">小</span>】
       </div>
     </div>
-    <div class="article-content">
-      <img src="/public/images/culture/culture1.jpg" alt="">
+    <div id="editor" class="article-content ql-container ql-snow">
+      <div class="ql-editor">
+        {{ article.article_content | safe }}
+        {% if article.article_source %}
+          <p class="source">本文来源：{{ article.article_source }}</p>
+        {% endif %}
+      </div>
     </div>
     <div class="article-nav">
       <div class="prev nav-item">
-        上一篇：<a href="javascript:void(0)" class="disabled">没有了</a>
+        上一篇：
+        <a
+          href="{{ prevArticle.article_id if prevArticle else 'javascript:void(0)' }}"
+          class="{{ '' if prevArticle else 'disabled' }}"
+        >
+          {{ prevArticle.article_title if prevArticle else "没有了" }}
+        </a>
       </div>
       <div class="next nav-item">
-        下一篇：<a href="">国科股份新三板挂牌敲钟仪式隆重举行</a>
+        下一篇：
+          <a 
+            href="{{ nextArticle.article_id if nextArticle else 'javascript:void(0)' }}"
+            class="{{ '' if nextArticle else 'disabled' }}"
+          >
+          {{ nextArticle.article_title if nextArticle else "没有了" }}
+        </a>
       </div>
     </div>
   </div>
+{% endblock %}
+
+{% block scripts %}
+  <script>
+    $("#fontSizeAlter").on("click", "span", function() {
+      var $self = $(this);
+      var fontSize = "14px";
+      
+      if($self.hasClass("small")) {
+        fontSize = "12px"
+      }
+      if($self.hasClass("middle")) {
+        fontSize = "14px"
+      }
+      if($self.hasClass("big")) {
+        fontSize = "18px"
+      }
+
+      $("#editor").css("font-size", fontSize);
+      $self.addClass("active").siblings("span").removeClass("active");
+    })
+  </script>
 {% endblock %}

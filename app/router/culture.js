@@ -9,5 +9,6 @@ module.exports = app => {
 
   // 企业文化
   culture.get('/', controller.culture.index);
-  culture.get('/:id', controller.culture.article); // 企业文化文章详情
+  // 企业文化文章详情
+  culture.get('/:article_id', controller.culture.article);
 };

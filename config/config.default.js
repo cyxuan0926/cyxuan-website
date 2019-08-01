@@ -12,6 +12,12 @@ module.exports = appInfo => {
    **/
   const config = exports = {};
 
+  config.cluster = {
+    listen: {
+      port: 7001,
+    },
+  };
+
   // use for cookie sign key, should change to your own and keep security
   config.keys = appInfo.name + '_1560938793735_2936';
 
@@ -23,8 +29,15 @@ module.exports = appInfo => {
     },
   };
 
-  // add your middleware config here
   config.middleware = [ 'breadcrumb' ];
+
+  config.static = {
+    gzip: true,
+    dir: [
+      path.resolve(process.cwd(), 'app/public'),
+      path.resolve(process.cwd(), '../official-website-upload'),
+    ],
+  };
 
   // add your user config here
   const userConfig = {

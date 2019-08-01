@@ -21,7 +21,7 @@
 ] %}
 
 <div class="layout-header">
-  <div class="center-box normal-flex">
+  <div class="center-box">
     <h1>
       <a href="/">国科股份</a>
     </h1>
@@ -37,9 +37,16 @@
         </li>
       {% endfor %}
     </ul>
-    <div class="search-box">
-      <input type="text" name="keyword" placeholder="请输入检索关键词">
-      <i class="icon"></i>
-    </div>
+    {% if path === "/culture" %}
+      <form method="GET" action="/search" class="search-box search-form">
+        <input
+          type="text"
+          name="keyword"
+          placeholder="请输入检索关键词"
+          autocomplete="off"
+        >
+        <button type="submit"><i class="icon"></i></button>
+      </form>
+    {% endif %}
   </div>
 </div>

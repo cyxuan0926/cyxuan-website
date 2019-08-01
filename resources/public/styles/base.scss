@@ -63,3 +63,27 @@ body {
     }
   }
 }
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 110px;
+  font-size: 16px;
+
+  a {
+    margin-left: 15px;
+
+    &.active, &:hover {
+      color: #d21a1a;
+    }
+  }
+
+  .prev {
+    margin-right: 20px;
+  }
+
+  .next {
+    margin-left: 35px;
+  }
+}

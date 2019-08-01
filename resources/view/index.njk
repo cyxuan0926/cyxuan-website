@@ -70,7 +70,7 @@
       <li>
         <a href="/solutions/zhjy">
           <i class="icon"></i>
-          <h3>智慧监狱精细化管理大数据平台</h3>
+          <h3>综合执法平台</h3>
         </a>
       </li>
       <li>
@@ -149,7 +149,8 @@
         </a>
       </li>
       <li>
-        <a href="/product/zhaf">
+        {# <a href="/product/zhaf"> #}
+        <a href="javascript:void(0)">
           <img src="/public/images/index/product-zhaf.png" alt="">
           <div class="intro">
             <h3>智慧安防产品</h3>
@@ -171,22 +172,35 @@
         </a>
       </div>
       <div class="content">
-        <a href=""><img src="/public/images/index/zhounianqin.jpg" alt=""></a>
+        {# <a href="#asdf">
+          <img src="/public/images/index/zhounianqin.jpg" alt="">
+        </a> #}
+        <a href="/culture/{{ articles[0].article_id }}" class="top-cover">
+          <img src="{{ articles[0].article_cover }}">
+        </a>
         <div class="hot-article">
           <h4>
-            <a href="">致全体员工的一封信</a>
+            <a href="/culture/{{ articles[0].article_id }}">
+              {{ articles[0].article_title }}
+            </a>
           </h4>
-          <p>国科全体员工：<br/>大家好！ 今天是国科十三周年的日子，我代表个人向全体员工表示感谢，感谢你们长期以来对国科的忠诚和奉献...<a href="">more</a>
+          <p>
+            {{ articles[0].article_description }}
+            <a href="/culture/{{ articles[0].article_id }}">more</a>
           </p>
         </div>
         <ul class="article-list">
-          <li>
-            <b></b>
-            <h4>
-              <a href="">致全体员工的一封信</a>
-            </h4>
-            <span>2019-05-15</span>
-          </li>
+          {% for article in articles %}
+            <li>
+              <b></b>
+              <h4>
+                <a href="/culture/{{ article.article_id }}">
+                  {{ article.article_title }}
+                </a>
+              </h4>
+              <span>{{ helper.formatTime(article.article_publish_time) }}</span>
+            </li>
+          {% endfor %}
         </ul>
       </div>
     </div>
@@ -195,12 +209,12 @@
         <h3>
           <i class="icon about"></i>关于我们
         </h3>
-        <a href="/about">
+        <a href="/about" class="top-cover">
           更多<b>></b>
         </a>
       </div>
       <div class="content">
-        <a href="/about">
+        <a href="/about" class="top-cover">
           <img src="/public/images/index/bangonglou.jpg" alt="">
         </a>
         <p class="intro">
