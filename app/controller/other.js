@@ -25,13 +25,16 @@ class OtherController extends Controller {
       page_size: parseInt(page_size),
       keyword: ctx.query.keyword,
     });
-    console.log('search', ctx.query.keyword, result);
 
     await ctx.render('search.njk', {
       keyword: ctx.query.keyword,
       articles: result.data,
       pagination: result.meta.pagination,
     });
+  }
+
+  async browser() {
+    await this.ctx.render('browser.njk');
   }
 }
 

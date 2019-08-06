@@ -7,14 +7,12 @@
     <meta name="description" content="">
     <meta name="renderer" content="webkit">
     <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
-    <link rel="shortcut icon" type="image/x-icon" href="">
-    <link rel="stylesheet" href="/public/styles/base-2ad9ea5576.css">
+    {# <link rel="shortcut icon" type="image/x-icon" href=""> #}
+    <link rel="stylesheet" href="/public/styles/base-26bc03007f.css">
     <script src="https://cdn.bootcss.com/bowser/1.9.4/bowser.min.js"></script>
     <script>
-      console.log(bowser.name === 'Internet Explorer' && parseInt(bowser.version) < 11)
-      console.log(bowser)
       if (bowser.name === 'Internet Explorer' && parseInt(bowser.version) < 11) {
-        // location.href="/"
+        location.href = "/browser";
       }
     </script>
     {# 头部引用资源 #}
@@ -47,7 +45,7 @@
         $(".search-form").submit(function (e) { 
           var $input = $(this).find("input[name='keyword']");
           var keyword = $.trim($input.val());
-          console.log("keyword", keyword)
+
           if (keyword === "") {
             e.preventDefault();
           } else {

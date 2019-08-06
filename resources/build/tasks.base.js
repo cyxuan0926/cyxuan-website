@@ -62,7 +62,7 @@ const reversionCss = () => {
 // 自动刷新浏览器
 const browserRefresh = () => {
   browserSync.init({
-    proxy: 'localhost:7001',
+    proxy: 'localhost:8001',
   });
 
   watch([ ASSETS_DEST_DIR, TEMPLATE_DEST_DIR ]).on('change', browserSync.reload);

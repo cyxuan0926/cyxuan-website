@@ -1,3 +1,5 @@
+@import "./var";
+
 .main {
   padding-top: 50px;
   padding-bottom: 170px;
@@ -15,19 +17,24 @@
   }
 
   .contacts {
-    display: flex;
-    flex-wrap: wrap;
+    overflow: hidden;
+    // display: flex;
+    // flex-wrap: wrap;
     width: 780px;
     margin: 40px auto 30px;
+    transform: translateX(40px);
     line-height: 36px;
     font-size: 16px;
 
     dl {
+      float: left;
       display: flex;
-      width: 50%;
-
+      width: 362px;
+      
       &:nth-child(2n) {
-        justify-content: flex-end;
+        float: right;
+        // margin-left: 500px;
+        // justify-content: flex-end;
       }
 
       .tel {
@@ -48,6 +55,10 @@
 
     span {
       margin: -1px 20px 0;
+    }
+
+    a:hover {
+      color: $main-color;
     }
   }
 }

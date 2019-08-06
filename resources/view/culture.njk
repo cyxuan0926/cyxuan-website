@@ -20,14 +20,10 @@
             {% for article in articles.slice(0, 5) %}
               {% if article.article_cover %}
                 <div class="swiper-slide">
-                  <a href="/culture/{{ article.article_id }}">
+                  <a href="/culture/{{ article.article_id }}" class="link">
                     <img src="{{ article.article_cover }}">
+                    <h3 class="title">{{ article.article_title }}</h3>
                   </a>              
-                  <a href="/culture/{{ article.article_id }}">
-                    <h3 class="title">
-                      {{ article.article_title }}
-                    </h3>
-                  </a>
                 </div>
               {% endif %}
             {% endfor %}

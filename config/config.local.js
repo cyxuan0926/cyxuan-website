@@ -3,6 +3,11 @@
 'use strict';
 
 module.exports = {
+  cluster: {
+    listen: {
+      port: 8001,
+    },
+  },
   mysql: {
     client: {
       host: 'localhost',
