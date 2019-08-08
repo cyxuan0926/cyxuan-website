@@ -35,7 +35,7 @@ class CultureController extends Controller {
 
     const articles = result.data;
     const i = articles.findIndex(el => el.article_id === article_id);
-    const prevArticle = i > 1 ? articles[i - 1] : null;
+    const prevArticle = i > 0 ? articles[i - 1] : null;
     const nextArticle = (i > -1 && i < articles.length - 1) ? articles[i + 1] : null;
 
     await ctx.render('article.njk', { article, prevArticle, nextArticle });
